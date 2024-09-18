@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<html style="font-family: Montserrat, sans-serif;">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Pricing Standby</title>
+        <style>
+            body {
+                font-size: 20px;
+                background-image: url("./images/background_main.jpg");
+                background-color: rgb(250, 244, 207);
+                background-size: 2400px 1200px;
+            }
+
+            #container {
+                display: flex;
+                gap: 150px;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 250px;
+            }
+
+            #container > * {
+                background-color:rgb(202, 111, 6);
+                height: 450px;
+                width: 350px;
+                border-radius: 40px;
+                box-shadow: 7px 3px 7px rgb(0, 0, 0);
+                flex: 0 1 250px;
+            }
+
+            div > h1 {
+               color: white;
+               text-align: center;
+               margin-top: 35px;
+               font-size: 2rem;
+               text-shadow: rgb(92, 22, 13) 1px 0 10px;
+            }
+
+            div > img {
+                width: 250px;
+                height: 175px;
+                position: static;
+                margin: 0px 50px;
+                box-shadow: 5px 1px 7px rgb(20, 14, 5);
+            }
+
+            div > p {
+                margin-left: 25px;
+                text-align: center;
+                width: 300px;
+                height: auto;
+                font-weight: 750;
+                color: rgb(243, 240, 225);
+                font-size: 1rem;
+                text-shadow: rgb(92, 22, 13) 1px 0 10px;
+            }
+
+            #second_template {
+               background-color: green;
+            }
+
+            #third_template > img {
+                width: 225px;
+                height: 150px;
+                margin-left: 50px;
+            }
+
+            #third_template > p {
+                margin-top: 10px;
+                text-shadow: 5px 2px 7px black;
+            }
+
+            #third_template {
+                background-color: rgb(116, 10, 10);
+            }
+            
+            h1 {
+                text-transform: uppercase;
+            }
+
+            @media (max-width: 1280px) {
+                #container > * {
+                    height: 350px;
+                    width: 300px;
+                    border-radius: 40px;
+                    flex: 0 1 250px;
+                }
+
+                #container {
+                    gap: 55px;
+                }
+
+                div > img {
+                    width: 150px;
+                    height: 100px;
+                    align-items: center;
+                    margin-left: 50px;
+                }
+
+                #third_template > img {
+                    width: 150px;
+                    height: 100px;
+                }
+
+                #third_template > h1 {
+                    font-size: 1.3rem !important;
+                }
+
+                div > p {
+                    font-size: 0.8rem;
+                    height: auto !important;
+                    width: 225px !important;
+                }
+
+                #p1, #p2 {
+                    margin-left: -10px;
+                    margin-top: 25px;
+                    width: 250px;
+                }
+
+                div > h1 {
+                    font-size: 1.5rem;
+                    margin-top: 20px !important;
+                }
+            }
+
+            @media (max-width: 660px) {
+                #container {
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 125px;
+                    margin-top: 80px;
+                }
+
+                #container {
+                    gap: 30px;
+                }
+
+                #container > * {
+                    max-width: 250px;
+                    max-height: 400px;
+                    min-width: 200px;
+                    min-height: 300px;
+                    flex: 1 1 250px;
+                    justify-content: center;
+                }
+
+                #p1, #p2 {
+                    margin-left: -10px;
+                    margin-top: -5px;
+                    width: 250px;
+                }
+
+                #third_template > h1 {
+                    font-size: 1.1rem !important;
+                    width: 175px;
+                    margin-left: 35px;
+                }
+
+                #p3 > p {
+                    font-size: 0.7rem;
+                    margin-left: 15px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="first_template">
+                <h1>Pad Kraphao</h1>
+                <img src="./images/pad_kraphao1.png" alt="Pad Kraphao Thai Food" />
+                    <div id="p1">
+                        <p>The most popular Thai street food(even more than Pad Thai!) this menu include
+                        meat as main ingredient. Including herb as Thai Basil and pounded chili
+                        with garlic. Seasoning with fish sauce, soy sauce, oyster sauce.</p>
+                    </div>
+            </div>
+            <div id="second_template">
+                <h1>Soi Ju</h1>
+                <img src="./images/soi_ju2.jpg" alt="Soi-Ju Esan Food" />
+                    <div id="p2">
+                        <p>The Infamous and exotic menu from Thai Northeastern region. It came with raw meat and organs, with spicy cow dung dip that gives you a bitter 
+                        and very hot flavour. Very great menu if you bring some beer to have with!</p>
+                    </div>
+            </div>
+            <div id="third_template">
+                <h1 style="font-size: 1.7rem; text-shadow: 5px 2px 7px black;">Fermented fish papaya salad</h1>
+                <img src="./images/papaya_pok-pok.png" alt="Fermented fish papaya salad" />
+                    <div id="p3">
+                        <p>You'll love this amazing Fermented fish papaya salad! This food is originally from Laos 
+                        and it's very popular in every Thai people who's love spicy and heavy flavoured food.
+                        If you like something taste really heavy, this one is a go to choice!</p>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
